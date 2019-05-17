@@ -14,4 +14,6 @@ public interface ContentService {
 
     Response insertContent(Content content);
 
+    Response updateContent(Content content);
+
 }

@@ -54,14 +54,37 @@ public class ContentServiceImpl implements ContentService {
         SimpleDateFormat dateFormat=new SimpleDateFormat(dateformat);
         String date = dateFormat.format(dt);
 
-        content.setTid(2);
-        content.setDesc("hhdsds");
+        content.setUid(1);
+        content.setDesc(content.getDesc().trim());
 
         content.setCreationdt(date);
         content.setUpdatedt(date);
 
         Response response = new Response();
         int count =contentMapper.insert(content);
+
+
+        if (count > 0) {
+            response.setCode(Message.SUCCESS_CODE);
+            response.setMsg(Message.SUCCESS_MESSAGE);
+        } else {
+            response.setCode(Message.ERROR_CODE);
+            response.setMsg(Message.ERROR_MESSAGE);
+
+        }
+        return response;
+    }
+
+    @Override
+    public Response updateContent(Content content) {
+        Date dt = new Date();
+        SimpleDateFormat dateFormat=new SimpleDateFormat(dateformat);
+        String date = dateFormat.format(dt);
+        content.setCreationdt(date);
+        content.setUpdatedt(date);
+
+        Response response = new Response();
+        int count =contentMapper.updateById(content);
 
 
         if (count > 0) {

@@ -50,26 +50,15 @@
 
     <insert id="insert" parameterType="com.example.demo.bean.dto.Content">
         insert bcontent(tid,uid,time ,description,details,creationdt,updatedt)
-        values(#{tid} ,1,now(),'大学','大学之道在明明德',
+        values(#{tid},1,now(),#{desc},#{details},
         #{creationdt,jdbcType=LONGVARCHAR}, #{updatedt,jdbcType=LONGVARCHAR})
 </insert>
 
 
     <update id="updateById" parameterType="com.example.demo.bean.dto.Content">
-        update BBUG set BUG_PROJECT_ID = #{pname}
-,BUG_CR_TYPE_ID = #{crname}
-,BUG_CR_NUM = #{crnum,jdbcType=LONGVARCHAR}
-,BUG_TASK_NUM = #{tasknum,jdbcType=LONGVARCHAR}
-,BUG_TYPE_ID = #{oname}
-,BUG_DESCRIPTION = #{description,jdbcType=LONGVARCHAR}
-,BUG_RCA = #{rca,jdbcType=LONGVARCHAR}
-,BUG_SOLUTION = #{solution,jdbcType=LONGVARCHAR}
-,BUG_ASSIGNEE_ID = #{developer}
-,BUG_TESTER_ID = #{tester}
-,BUG_UPDATEDT = #{updatedt,jdbcType=LONGVARCHAR}
-,BUG_UPDATEUID = #{updateuid,jdbcType=LONGVARCHAR}
-,BUG_STATUS_ID = #{bugStatus}
-where bug_id = #{id}
+       update bcontent set tid = #{tid},description = #{desc},details = #{details},
+       updatedt = #{updatedt,jdbcType=LONGVARCHAR}
+        where id = #{id}
     </update>
 
 

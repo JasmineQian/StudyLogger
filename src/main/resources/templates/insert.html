@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>修改页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="center-block">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">新增Bug记录</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table border="1" class="table table-striped table-bordered table-hover">
+                            <form th:action="@{/create}" method="post">
+
+                                <tr>
+                                    <td>学习类型</td>
+                                    <td>
+                                        <select name="tid">
+                                            <option th:each="types:${types}" th:value="${types.id}"
+                                                    th:text="${types.name}"></option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td>内容</td>
+                                    <td><input maxlength="10" type="text" name="desc" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td>详细描述</td>
+                                    <td><textarea rows="10" cols="20" type="text" name="details" style="margin: 0px; width: 1005px;"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="确认新增" class="btn btn-info"></td>
+                                    <td><a th:href="@{/pcontent}" input="button" class="btn btn-info">回到首页</a></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
