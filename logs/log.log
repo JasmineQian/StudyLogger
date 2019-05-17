@@ -1,0 +1,15 @@
+[2019-05-17 00:42:15.516] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 15580 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 00:42:15.518] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 00:42:15.518] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 00:43:35.861] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 12796 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 00:43:35.869] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 00:43:35.870] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 00:44:18.462] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 8936 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 00:44:18.464] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 00:44:18.465] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 00:45:52.506] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 6948 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 00:45:52.509] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 00:45:52.511] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 00:45:57.314] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 17740 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 00:45:57.316] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 00:45:57.317] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
