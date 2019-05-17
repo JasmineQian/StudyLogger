@@ -13,3 +13,28 @@
 [2019-05-17 00:45:57.314] [main][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 17740 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
 [2019-05-17 00:45:57.316] [main][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
 [2019-05-17 00:45:57.317] [main][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 09:59:43.704] [restartedMain][INFO][com.example.demo.DemoApplication][logStarting] line:[50]-> Starting DemoApplication on jasqia7490 with PID 12776 (D:\00I_KuGou\StudyLog\target\classes started by jasqia in D:\00I_KuGou\StudyLog)
+[2019-05-17 09:59:43.706] [restartedMain][DEBUG][com.example.demo.DemoApplication][logStarting] line:[53]-> Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+[2019-05-17 09:59:43.706] [restartedMain][INFO][com.example.demo.DemoApplication][logStartupProfileInfo] line:[675]-> No active profile set, falling back to default profiles: default
+[2019-05-17 09:59:45.992] [restartedMain][INFO][com.example.demo.DemoApplication][logStarted] line:[59]-> Started DemoApplication in 2.683 seconds (JVM running for 3.383)
+[2019-05-17 09:59:54.771] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:54.787] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:54.815] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:56.376] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:56.377] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:56.396] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:56.519] [http-nio-8083-exec-5][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:56.519] [http-nio-8083-exec-5][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:56.535] [http-nio-8083-exec-5][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:56.684] [http-nio-8083-exec-7][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:56.684] [http-nio-8083-exec-7][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:56.703] [http-nio-8083-exec-7][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:56.857] [http-nio-8083-exec-10][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:56.857] [http-nio-8083-exec-10][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:56.871] [http-nio-8083-exec-10][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:57.020] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:57.021] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:57.035] [http-nio-8083-exec-1][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
+[2019-05-17 09:59:57.193] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==>  Preparing: select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent 
+[2019-05-17 09:59:57.193] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> ==> Parameters: 
+[2019-05-17 09:59:57.212] [http-nio-8083-exec-4][DEBUG][com.example.demo.mapper.ContentMapper.getContents][debug] line:[143]-> <==      Total: 2
