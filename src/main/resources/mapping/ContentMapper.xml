@@ -17,18 +17,18 @@
     </resultMap>
 
     <select id="getByid" resultMap="Result">
-           select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent
+           select id,tid,uid,DATE_FORMAT(time,'%Y年%m月%d日') as time ,description,details,creationdt,updatedt from bcontent
           WHERE id =#{id}
  </select>
 
 
     <select id="getContents" resultMap="Result">
-          select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent
+          select id,tid,uid,DATE_FORMAT(time,'%Y年%m月%d日') as time ,description,details,creationdt,updatedt from bcontent
 </select>
 
 
     <select id="getBugsByPage" parameterType="com.example.demo.bean.po.Page" resultMap="Result">
-          select id,tid,uid,time ,description,details,creationdt,updatedt from bcontent
+          select id,tid,uid,DATE_FORMAT(time,'%Y年%m月%d日') as time ,description,details,creationdt,updatedt from bcontent
           desc limit #{starter}, #{pageSize}
 </select>
 

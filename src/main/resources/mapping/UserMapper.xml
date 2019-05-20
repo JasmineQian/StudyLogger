@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.UserMapper">
+
+
+    <resultMap id="Result" type="com.example.demo.bean.dto.User">
+        <result property="id" column="id"/>
+        <result property="username" column="userid"/>
+        <result property="password" column="password"/>
+        <result property="mobile" column="mobile"/>
+        <result property="roles" column="role"/>
+   </resultMap>
+
+    <select id="findByUsername" parameterType="com.example.demo.bean.dto.User" resultMap="Result">
+         select id,userid,password, mobile,role from buser where userid = #{username}
+ </select>
+
+    <select id="checkByUsername"  parameterType="com.example.demo.bean.dto.User" resultType="int">
+         select count(*) from buser where userid = #{username}
+ </select>
+
+
+    <insert id="insert" parameterType="com.example.demo.bean.dto.User">
+        insert buser(userid,password,mobile,creationdt,updatedt,role)
+        values(#{username},#{password},#{mobile},now(),now(),'ROLE_ADMIN,ROLE_USER')
+    </insert>
+</mapper>

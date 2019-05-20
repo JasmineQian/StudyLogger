@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.bean.dto.Content;
 import com.example.demo.bean.dto.Type;
+import com.example.demo.bean.po.Request;
 import com.example.demo.bean.po.Response;
 import com.example.demo.bean.po.ResponseBean;
 import com.example.demo.common.Message;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -71,5 +73,26 @@ public class ContentPageController {
         }
 
     }
+
+    @PostMapping("/findById")
+    public String findByIdpage(Model model, @RequestParam("id") int id) {
+        logger.info("根据用户ID查询用户信息");
+        Request request = new Request();
+        request.setId(id);
+
+
+        ResponseBean rb = contentService.getContentById(request);
+        if (rb.getData() != null) {
+            logger.info("查询成功！");
+            model.addAttribute("content", rb.getData() );
+            model.addAttribute("message", "查询成功");
+            return "content/details";
+        } else {
+            model.addAttribute("message", "查询失败");
+            return "auto";
+        }
+    }
+
+
 
 }
