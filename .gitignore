@@ -27,3 +27,11 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+
+target/
+*.iml
+.idea/
+application-alive.properties
+logs/
+.gitignore
